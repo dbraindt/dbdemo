@@ -5,10 +5,10 @@ create schema if not exists village;
 
 use village;
 
---!
-drop table quests;
-drop table heroes;
-drop table villagers;
+-- unnecessary
+drop table if exists quests;
+drop table if exists heroes;
+drop table if exists villagers;
 
 
 

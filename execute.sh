@@ -2,9 +2,9 @@
 FILE=$1
 
 if [ -f $FILE ]; then
-  mysql -uroot -p village < $FILE
+  mysql -u"$DBUSER" -p"$DBPASSWD" < $FILE
 else
-  echo "nah" 
+  printf "\nno such $FILE\n" 
 fi
 
 
